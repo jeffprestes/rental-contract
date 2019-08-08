@@ -1,5 +1,5 @@
-var url = "http://rinkeby.caralabs.me:18575";
-var provider = new ethers.providers.JsonRpcProvider(url);
+var url = "https://rinkeby.caralabs.me:18575";
+var provider = new ethers.providers.Web3Provider(web3.currentProvider);
 var walletLocator = new ethers.Wallet(accounts.personas[0].privatekey, provider);
 var walletRenter = new ethers.Wallet(accounts.personas[1].privatekey, provider);
 var contractAddress = '0xcb3504205d0a6046967f18394f254acef8990454';
